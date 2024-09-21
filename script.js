@@ -1,14 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     const songs = [
-        { title: 'Not Like Us', artist: 'Kendrick Lamar', url: 'songs/notlikeus.mp3', image: 'images/NotLikeUs.png' },
-        { title: 'Drive Thru of BK', artist: 'CaseOh', url: 'songs/SongTooBig.mp3', image: 'images/caseohbk.png'  },
-        { title: 'Carnival ft. Rich The Kid, and Playboi Carti', artist: '¥$, Kanye West, Ty Dolla $ign', url: 'songs/Carnival.mp3', image: 'images/Carnival.png' },
-        { title: 'Runaway ft. Pusha T', artist: 'Kanye West', url: 'songs/Runaway.mp3', image: 'images/Runaway.png' },
-        { title: 'Good Morning', artist: 'KanYe West', url: 'songs/GoodMorning.mp3', image: 'images/GoodMorning.png' },
-        { title: 'Watch the Party Die', artist: 'Kendrick Lamar', url: 'songs/WatchThePartyDie.mp3', image: 'images/WatchThePartyDie.png' }
-
+        { title: 'song name', artist: 'author', url: 'songs/song.mp3', image: 'images/image.png' },
     ];
 
+// add songs your songs above
+    
     const audioElement = new Audio();
     let currentSongIndex = 0;
     let isPlaying = false;
