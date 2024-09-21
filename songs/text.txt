@@ -1,0 +1,3 @@
+this is where u add all ur songs
+
+-- go to script.js to figure out how to add songs
