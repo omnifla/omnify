@@ -1,0 +1,179 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #1DB954;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.library {
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.library h2 {
+    margin-top: 0;
+}
+
+.library ul {
+    list-style: none;
+    padding: 0;
+}
+
+.library ul li {
+    padding: 0.5rem 0;
+}
+.library {
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.library h2 {
+    margin-top: 0;
+}
+
+.library ul {
+    list-style: none;
+    padding: 0;
+}
+
+.library ul li {
+    padding: 0.5rem 0;
+}
+
+.main-content {
+    width: 80%;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.top-section {
+    margin-bottom: 2rem;
+}
+
+.playlists {
+    display: flex;
+    gap: 1rem;
+}
+
+.playlist {
+    background-color: #333;
+    padding: 1rem;
+    width: 150px;
+    text-align: center;
+}
+
+.player-controls {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #181818;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+button {
+    background-color: #1DB954;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    color: white;
+}
+
+#current-song {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#current-song-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+#current-song-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#volume-slider {
+    width: 100px;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+#search-form {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+#search-input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+#search-results {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.search-result {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #333;
+    padding: 1rem;
+}

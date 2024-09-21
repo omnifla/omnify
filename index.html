@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>omnify</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <header>
+                <h1>omnify</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showPage('home')">Home</a></li>
+                    <li><a href="#" onclick="showPage('search')">Search</a></li>
+                    <li><a href="#" onclick="showPage('library')">Your Library</a></li>
+                </ul>
+            </nav>
+            <div class="library">
+                <h2>Your Library</h2>
+                <ul>
+                    <li>Liked Songs</li>
+                    <!-- Add more items as needed -->
+                </ul>
+            </div>
+        </aside>
+        <main class="main-content">
+            <section id="home" class="page active">
+                <h2>Made For You</h2>
+                <div class="playlists">
+                    <!-- Playlists will be dynamically added here -->
+                </div>
+            </section>
+            <section id="search" class="page">
+                <h2>Search</h2>
+                <form id="search-form" onsubmit="performSearch(event)">
+                    <input type="text" id="search-input" placeholder="Search for songs, artists, albums...">
+                    <button type="submit">Search</button>
+                </form>
+                <div id="search-results">
+                    <!-- Search results will be displayed here -->
+                </div>
+            </section>
+        </main>
+        <footer class="player-controls">
+            <button onclick="prevSong()">Prev</button>
+            <button onclick="togglePlayPause()">Play/Pause</button>
+            <button onclick="nextSong()">Next</button>
+            <button onclick="toggleLoop()">Loop</button>
+            <div id="current-song">
+                <img id="current-song-image" src="" alt="Current song image" />
+                <div id="current-song-info">No song playing</div>
+            </div> 
+            <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1" onchange="adjustVolume(this.value)">
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
