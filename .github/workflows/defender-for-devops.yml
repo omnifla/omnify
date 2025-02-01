@@ -26,6 +26,7 @@ jobs:
           echo "ESLint installation failed"
           exit 1
         fi
+        npm list -g eslint
     - name: Run Microsoft Security DevOps
       uses: microsoft/security-devops-action@v1.6.0
       id: msdo
