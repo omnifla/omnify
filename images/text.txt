@@ -1,3 +1,0 @@
-this is where u add images for the songs u add
-
--- more info in script.js
