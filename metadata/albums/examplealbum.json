@@ -1,0 +1,15 @@
+{
+    "title": "Example Album",
+    "artist": "Example Artist",
+    "image": "metadata/albums/example.png",
+    "songs": [
+        {
+            "title": "A song",
+            "file": "./albums/example\\example.mp3"
+        },
+        {
+            "title": "A song 2",
+            "file": "./albums/example\\example2.mp3"
+        }
+    ]
+}
