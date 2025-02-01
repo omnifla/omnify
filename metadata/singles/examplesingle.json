@@ -1,0 +1,10 @@
+{
+    "title": "Example",
+    "artist": "Example Artist",
+    "image": "metadata/singles/example.png",
+    "song": {
+      "title": "Example Song",
+      "file": "singles/Example/Example.mp3"
+    }
+  }
+  
